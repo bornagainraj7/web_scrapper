@@ -10,7 +10,8 @@ This project is capable of scrapping github search page with any keyword(in this
 This endpoint will fetch all the repo details saved in the with limit of 10 repos per page. The above endpoint can also have a query `page` as for page number 2 (e.g. `http://localhost:3000/api/repo/all?page=2`) if you want to fetch another page and so on till page 5 as this database has only 50 entries because of 5 page scrapping from github search.
 
 result format(if successful): 
-{
+
+`{
     "error": false,
     "message": "Repos found successfully",
     "status": 200,
@@ -41,16 +42,16 @@ result format(if successful):
             "__v": 0
         }
     ]
-}
+}`
 
 result format(if error): 
 
-{
+`{
     "error": true,
     "message": "Error message",
     "status": "500/404",
     "data": null
-}
+}`
 
 
 ### Find by username
@@ -61,7 +62,7 @@ This endpoint will fetch all the repos by a particular user without any limit as
 
 result format(if successful): 
 
-{
+`{
     "error": false,
     "message": "Repo found successfully",
     "status": 200,
@@ -90,16 +91,16 @@ result format(if successful):
             "__v": 0
         }
     ]
-}
+}`
 
 result format(if error): 
 
-{
+`{
     "error": true,
     "message": "Error message",
     "status": "500/404",
     "data": null
-}
+}`
 
 
 ### Find by repo id
@@ -110,7 +111,7 @@ This endpoint will fetch the repo with that particular repo id.
 
 result format(if successful): 
 
-{
+`{
     "error": false,
     "message": "Repo found successfully",
     "status": 200,
@@ -125,16 +126,16 @@ result format(if successful):
         "username": "rnfsoft",
         "__v": 0
     }
-}
+}`
 
 result format(if error): 
 
-{
+`{
     "error": true,
     "message": "Error message",
     "status": "500/404",
     "data": null
-}
+}`
 
 
 ### Find by programming language
@@ -144,7 +145,8 @@ result format(if error):
 This endpoint will fetch all the repos by a particular programming language without any limit as max limit will be 50 repos.
 
 result format(if successful):
-{
+
+`{
     "error": false,
     "message": "Repo found successfully",
     "status": 200,
@@ -159,16 +161,16 @@ result format(if successful):
         "username": "rnfsoft",
         "__v": 0
     }
-}
+}`
 
 result format(if error): 
 
-{
+`{
     "error": true,
     "message": "Error message",
     "status": "500/404",
     "data": null
-}
+}`
 
 
 ### Search
@@ -180,7 +182,7 @@ This endpoint return result of the search query which can be username or program
 
 result format(if successful): 
 
-{
+`{
     "error": false,
     "message": "Repos found successfully",
     "status": 200,
@@ -208,13 +210,13 @@ result format(if successful):
             "__v": 0
         }
     ]
-}
+}`
 
 result format(if error): 
 
-{
+`{
     "error": true,
     "message": "Error message",
     "status": "500/404",
     "data": null
-}
+}`
